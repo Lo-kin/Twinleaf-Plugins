@@ -1,0 +1,36 @@
+CREATE TABLE UserInfo (
+    SteamID CHAR(255) NOT NULL,
+    GameName CHAR(255) NOT NULL,
+    Pwd CHAR(255) NOT NULL,
+    LogIP CHAR(255),
+    Dollar INT DEFAULT 100,
+    SignInTime DATETIME DEFAULT NOW(),
+    OnlineTime INT,
+    OnlineState INT
+);
+
+CREATE TABLE UspModel (
+    Price INT DEFAULT 10,
+    ItemID INT NOT NULL,
+    ItemName CHAR(255) NOT NULL,
+    V_Model CHAR(255) NOT NULL,
+    P_Model CHAR(255) NOT NULL,
+    PutInTime DATETIME DEFAULT NOW()
+);
+
+CREATE TABLE KnifeModel (
+    Price INT DEFAULT 10,
+    ItemID INT NOT NULL,
+    ItemName CHAR(255) NOT NULL,
+    V_Model CHAR(255) NOT NULL,
+    P_Model CHAR(255) NOT NULL,
+    PutInTime DATETIME DEFAULT NOW()
+);
+
+CREATE TABLE PlayerModel (
+    Price INT DEFAULT 10,
+    ItemID INT NOT NULL,
+    ItemName CHAR(255) NOT NULL,
+    ModelPath CHAR(255) NOT NULL,
+    PutInTime DATETIME DEFAULT NOW()
+);
